@@ -1,0 +1,43 @@
+:root {
+	--primary-clr: #e0b0a6;
+	--secondary-clr: #3e3f38;
+	--white-clr: #fffaf7;
+	--grey-clr: #7c8893;
+}
+
+// @media (prefers-color-scheme: dark) {
+// 	:root {
+// 	}
+// }
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	width: 100vw;
+	min-height: 100vh;
+	min-height: 100dvh;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: var(--white-clr);
+	color: var(--secondary-clr);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+// @media (prefers-color-scheme: dark) {
+// 	html {
+// 		color-scheme: dark;
+// 	}
+// }
