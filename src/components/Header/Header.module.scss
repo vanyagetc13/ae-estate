@@ -68,6 +68,7 @@
 			background-color: var(--white-clr);
 			pointer-events: none;
 			cursor: default;
+			transition: all 0.25s;
 		}
 		&:hover::before {
 			width: 100%;
