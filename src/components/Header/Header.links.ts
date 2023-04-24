@@ -1,10 +1,20 @@
-export const Links = [
+import { type ILink } from '@/interfaces/Link.interface'
+
+export const Links: ILink[] = [
 	{
 		path: '/',
-		name: 'Home',
+		name: 'Домой',
+	},
+	{
+		path: '/about-us',
+		name: 'О нас',
 	},
 	{
 		path: '/contacts',
-		name: 'Contacts',
+		name: 'Контакты',
+	},
+	{
+		path: '/blog',
+		name: 'Блог',
 	},
 ]

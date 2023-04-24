@@ -22,12 +22,13 @@ const Header: FC = () => {
 							src='/estate.jpg'
 							alt='logo'
 							fill
+							priority
 							style={{ objectFit: 'contain' }}
 							sizes='
-						(max-width: 1920px): 90%
-						(max-width: 767px): 75%
-						(max-width: 424px): 60%
-					'
+								(max-width: 1920px): 90%
+								(max-width: 767px): 75%
+								(max-width: 424px): 60%
+							'
 						/>
 					</div>
 					<h1 className={styles.name}>ae.estate</h1>

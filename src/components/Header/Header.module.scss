@@ -19,7 +19,6 @@
 		align-items: center;
 		gap: 20px;
 		cursor: pointer;
-
 		.name {
 			font-size: 1.2em;
 			text-transform: uppercase;
@@ -34,9 +33,9 @@
 				background-color: var(--white-clr);
 				transition: all 0.25s;
 			}
-			&:hover::before {
-				width: 100%;
-			}
+		}
+		&:hover .name::before {
+			width: 100%;
 		}
 	}
 
@@ -56,6 +55,7 @@
 	gap: 50px;
 	a {
 		position: relative;
+		transition: all 0.25s;
 		&:hover {
 			color: var(--white-clr);
 		}
@@ -66,7 +66,6 @@
 			bottom: -5px;
 			height: 2px;
 			background-color: var(--white-clr);
-			transition: all 0.25s;
 			pointer-events: none;
 			cursor: default;
 		}
