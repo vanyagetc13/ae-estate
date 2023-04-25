@@ -9,13 +9,14 @@ const NotFound: FC = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			// router.replace('/')
-		}, 3000)
+			router.back()
+		}, 2000)
 	}, [])
 	return (
 		<Layout title='404'>
 			<div className={styles.wrapper}>
-				<div>404 | Страница не найдена. | Page not found.</div>
-				<div>Идёт переадресация...</div>
+				<h4>404 | Страница не найдена. | Page not found.</h4>
+				<h5>Идёт переадресация...</h5>
 			</div>
 		</Layout>
 	)

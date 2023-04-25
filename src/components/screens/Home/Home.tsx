@@ -1,7 +1,12 @@
+import axios from 'axios'
 import { FC } from 'react'
 
 const Home: FC = () => {
-	return <div>Home</div>
+	return (
+		<div>
+			<div>Home</div>
+		</div>
+	)
 }
 
 export default Home

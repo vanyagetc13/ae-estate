@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { FC, PropsWithChildren } from 'react'
-import Header from './../Header/Header'
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 
 interface ILayout {
 	title: string
@@ -22,6 +23,7 @@ const Layout: FC<PropsWithChildren<ILayout>> = ({
 			</Head>
 			<Header />
 			<main className='main'>{children}</main>
+			<Footer />
 		</>
 	)
 }

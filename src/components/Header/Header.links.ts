@@ -1,6 +1,6 @@
-import { type ILink } from '@/interfaces/Link.interface'
+import { type IHeaderLink } from '@/interfaces/Link.interface'
 
-export const Links: ILink[] = [
+export const Links: IHeaderLink[] = [
 	{
 		path: '/',
 		name: 'Домой',
@@ -14,7 +14,7 @@ export const Links: ILink[] = [
 		name: 'Контакты',
 	},
 	{
-		path: '/blog',
+		path: '/blog/posts',
 		name: 'Блог',
 	},
 ]
