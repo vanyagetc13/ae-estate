@@ -1,0 +1,8 @@
+.myInput {
+	padding: 5px 7px;
+	border: 2px solid var(--grey-clr);
+	&:focus {
+		border: 2px solid var(--primary-clr);
+		outline: none;
+	}
+}

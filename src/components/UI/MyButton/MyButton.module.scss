@@ -1,0 +1,10 @@
+.myButton {
+	padding: 5px 7px;
+	background-color: var(--white-clr);
+	border: 1px solid var(--grey-clr);
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--primary-clr);
+	}
+}
