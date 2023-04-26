@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 		{
 			from: 'ae.estate.agency@mail.ru',
 			to: 'ae.estate.agency@mail.ru',
-			subject: 'Новый сообщение с сайта!',
+			subject: 'Новое сообщение с сайта!',
 			text: getText(req.body),
 			html: getHtml({
 				...req.body,

@@ -4,7 +4,7 @@ import { NextPage } from 'next'
 
 const contactsPage: NextPage = () => {
 	return (
-		<Layout title='Contacts'>
+		<Layout title='Контакты'>
 			<Contacts />
 		</Layout>
 	)

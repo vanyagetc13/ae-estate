@@ -3,7 +3,11 @@ import { type IHeaderLink } from '@/interfaces/Link.interface'
 export const Links: IHeaderLink[] = [
 	{
 		path: '/',
-		name: 'Домой',
+		name: 'Главная',
+	},
+	{
+		path: '/services',
+		name: 'Услуги',
 	},
 	{
 		path: '/about-us',

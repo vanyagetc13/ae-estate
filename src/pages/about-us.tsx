@@ -4,7 +4,7 @@ import AboutUs from '@/components/screens/AboutUs/AboutUs'
 
 const AboutUsPage: NextPage = () => {
 	return (
-		<Layout title='About us'>
+		<Layout title='О нас'>
 			<AboutUs />
 		</Layout>
 	)
