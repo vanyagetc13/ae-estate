@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { FC, PropsWithChildren } from 'react'
+import CopyRight from '../CopyRight/CopyRight'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 

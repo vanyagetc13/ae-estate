@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 			text: getText(req.body),
 			html: getHtml({
 				...req.body,
-				message: JSON.parse(req.body.message).replaceAll('\n', '<br>'),
+				message: JSON.parse(req.body.message).replaceAll('\n', '<br/>'),
 			}),
 		},
 		(error, info) => {

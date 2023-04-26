@@ -1,8 +1,9 @@
 :root {
 	--primary-clr: #e0b0a6;
+	--primary-clr-dark: #aa7d73;
 	--secondary-clr: #3e3f38;
 	--white-clr: #fffaf7;
-	--grey-clr: #7c8893;
+	--grey-clr: #d6dadd;
 }
 
 // @media (prefers-color-scheme: dark) {
@@ -26,6 +27,8 @@ body,
 	min-height: 100dvh;
 	height: 100%;
 	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 body {
@@ -43,7 +46,10 @@ a {
 }
 
 .main {
-	min-height: calc(100% - 110px - 120px); // 100% - header - footer
+	min-height: calc(100% - 110px - 279px); // 100% - header - footer
+	@media (max-width: 740px) {
+		min-height: calc(100% - 110px - 69px); // 100% - header - copyright
+	}
 	width: 100%;
 	padding: 15px 12.5%;
 }
