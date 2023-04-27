@@ -32,7 +32,11 @@ const Footer: FC = () => {
 					<h5>Услуги</h5>
 				</div>
 				<div className={styles.footer__column}>
-					<h5>Контакты</h5>
+					<h5 className={styles.contacts__tip}>
+						Контакты
+						<span>Нажатие на текст сработает как ссылка.</span>
+						<span>Нажатие на иконку скорпирует контакт в буфер обмена.</span>
+					</h5>
 					<ul className={styles.contacts}>
 						{Contacts.map(contact => (
 							<li key={contact.content}>
@@ -41,8 +45,19 @@ const Footer: FC = () => {
 									alt={contact.name}
 									width={20}
 									height={20}
+									onClick={() => {
+										if (navigator.clipboard)
+											navigator.clipboard
+												.writeText(contact.content)
+												.catch(console.error)
+									}}
 								/>
-								<span>{contact.content}</span>
+								<Link
+									href={contact.href + contact.content}
+									target={contact.href === 'tel:' ? '_self' : '_blank'}
+								>
+									{contact.content}
+								</Link>
 							</li>
 						))}
 					</ul>

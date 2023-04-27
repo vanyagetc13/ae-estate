@@ -29,7 +29,6 @@ export default async function handler(req, res) {
 				console.error(error)
 				res.status(500).json('Error sending')
 			} else {
-				console.log(info)
 				res.status(200).json('OK!')
 			}
 		}

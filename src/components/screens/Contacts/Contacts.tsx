@@ -59,7 +59,6 @@ const Contacts: FC = () => {
 							onChange={e => setMessage(e.currentTarget.value)}
 							required
 							placeholder='Опишите: какая услуга Вас интересует (максимум 255 символов).'
-							minLength={2}
 							maxLength={255}
 						/>
 						<div className={styles.symbols}>{message.length}/255</div>

@@ -35,22 +35,53 @@
 	}
 }
 
-.contacts li {
-	font-size: 1em;
-	line-height: 1.5em;
-	display: flex;
-	gap: 10px;
-	align-items: center;
+h5.contacts__tip {
+	position: relative;
+	margin-bottom: 30px;
+	span {
+		font-size: 0.6em;
+		color: var(--grey-clr);
+		opacity: 0.7;
+		position: absolute;
+		left: 0;
+		word-break: keep-all;
+		white-space: nowrap;
+		&:first-child {
+			top: 1.5em;
+		}
+		&:last-child {
+			top: 3em;
+		}
+	}
 }
 
+.contacts {
+	img {
+		cursor: copy;
+		transition: all 0.3s;
+	}
+	img:hover {
+		transform: rotate(30deg);
+	}
+	li {
+		font-size: 1em;
+		line-height: 1.5em;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+}
 @media (max-width: 1024px) {
 	.footer {
 		padding: 30px 40px;
 	}
 }
 
-@media (max-width: 740px) {
+@media (max-width: 767px) {
 	.footer {
-		display: none;
+		flex-direction: column;
+	}
+	.footer__main {
+		max-width: 100%;
 	}
 }

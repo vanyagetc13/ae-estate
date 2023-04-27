@@ -1,13 +1,13 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import styles from './Header.module.scss'
 import Image from 'next/image'
-import { Links } from './Header.links'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Nav from './Nav'
 
 const Header: FC = () => {
 	const router = useRouter()
 	const { pathname } = router
+	const [showBurgerMenu, setShowBurgerMenu] = useState<boolean>(false)
 	return (
 		<header className={styles.header}>
 			<div
@@ -32,17 +32,19 @@ const Header: FC = () => {
 				</div>
 				<h1 className={styles.name}>ae.estate</h1>
 			</div>
-			<nav className={styles.nav}>
-				{Links.map(link => (
-					<Link
-						href={link.path}
-						key={link.name}
-						className={pathname === link.path ? styles.active : ''}
-					>
-						{link.name}
-					</Link>
-				))}
-			</nav>
+			<div
+				className={
+					showBurgerMenu
+						? `${styles.nav__mobile} ${styles.active}`
+						: styles.nav__mobile
+				}
+				onClick={() => setShowBurgerMenu(prev => !prev)}
+			>
+				<Nav pathname={pathname} />
+			</div>
+			<div className={styles.nav__web}>
+				<Nav pathname={pathname} />
+			</div>
 		</header>
 	)
 }
